@@ -1,2 +1,2 @@
-# jogo-velha
-projeto de jogo da velha feito durante o curso programadorBR
+# Tic-tac-toe
+Tic-tac-toe project made during the ProgramadorBR course
