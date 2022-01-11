@@ -1,0 +1,84 @@
+:root{
+    --colorOne: #1A374D;
+    --colorTwo: #406882;
+    --colorTree: #6998AB;
+    --colorFour: #B1D0E0;
+}
+
+body{
+    background-color: var(--colorOne);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.colum{
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    text-align: center;
+    font-size: 46px;
+    color: var(--colorFour);
+}
+
+.button-restart{
+    display: block;
+    width: 200px;
+    height: 70px; 
+    
+    background-color: var(--colorTree);
+    border: 1px solid;
+    border-radius: 5px;
+
+    color: var(--colorOne);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.button-restart:hover{
+    background-color: var(--colorFour)
+}
+
+.square{
+    width: 180px;
+    height: 180px;
+    margin: 2px;
+
+    border: 0.25px solid black;
+    box-shadow: 6px 6px 10px black;
+    background-color: var(--colorTree);
+    
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.square:hover{
+    background-color: var(--colorFour);
+    
+}
+
+.x::after,.o::after{
+    content:'X';
+    font-size: 70px;
+    display:flex;
+    color: var(--colorOne);
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.o:after{
+    content:'O';
+    
+
+}
